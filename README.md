@@ -1,9 +1,12 @@
 # fitness-tracker-design
 Fitness Tracker Pseudocode and Flowchart and IPO Chart
 
+
 **Course:** ITP 100 Software Design & Logic
 **Author:** Andrew Villafranca
 **Deliverable:** Algorithm Design (IPO, Flowchart, Psuedocode)
+
+---
 
 ## 1. Problem Description & Scope
 * **Problem:** Students need a command-line interface to track daily cardiovascular and strength exercise durations, validate that inputs are realistic, and review their progress toward a weekly target of 120 minutes.
@@ -12,6 +15,8 @@ Fitness Tracker Pseudocode and Flowchart and IPO Chart
   *  Validates menu bounds (rejects values outside menu options) and duration inputs (rejects negative numbers).
   *  Aggregates total minutes in memory during execution and outputs a progress summary on demand.
   *  Terminates cleanly when the user selects the Exit option.
+
+---
 
 ## 2. IPO Chart (Input - Process - Output)
 
@@ -33,3 +38,48 @@ MODULE Main()
     DECLARE Real duration = 0.0
     DECLARE String activity_name = ""
 
+    DISPLAY "=============================="
+    DISPLAY "     CAMPUS FITNESS TRACKER   "
+    DISPLAY "=============================="
+
+    WHILE True
+        // Step 1: Main Menu & Input Validation
+        DISPLAY "---MAIN MENU---"
+        DISPLAY "1. Log Cardio Workout"
+        DISPLAY "2. Log Strength Workout
+        DISPLAY "3. View Activity Summary"
+        DISPLAY "4. Exit"
+        DISPLAY "Enter your choice (1-4):"
+        INPUT main_choice
+
+        WHILE main_choice != 1 AND main_choice != 2 AND main_choice != 3 AND main_choice != 4
+            DISPLAY "Invalid. Choice must be 1, 2, 3, or 4. Try Again:"
+            INPUT main_choice
+        END WHILE
+
+        // Step 2. Route Submenus and Actions
+        IF main_choice == 1 THEN
+            DISPLAY "--- CARDIO MENU ---"
+            DISPLAY "1. Running / Jogging"
+            DISPLAY "2. Cycling"
+            DISPLAY "3. Swimming"
+            DISPLAY "Enter cardio activity (1-3):"
+            INPUT sub_choice
+
+            WHILE sub_choice != 1 AND sub_choice != 2 AND sub_choice != 3
+                DISPLAY "Invalid. Please enter 1, 2, or 3. Try again!"
+                INPUT sub_choice
+            END WHILE
+
+            IF sub_choice == 1 THEN
+                activity_name = "Running / Jogging"
+            ELSE IF sub_choice == 2 THEN
+                activity_name = "Cycling"
+            ELSE
+                activity_name "Swimming"
+            END IF
+
+
+
+
+```
