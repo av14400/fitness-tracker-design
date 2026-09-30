@@ -136,5 +136,11 @@ MODULE Main()
                 DISPLAY "Status: No workouts logged yet."
             END IF
             DISPLAY "========================================="
+         ELSE If main_choice == 4 THEN
+            DISPLAY "Thank you for using Campus Fitness Tracker. Stay Active!"
+         END IF
+       END WHILE
+END MODULE
 
 ```
+
