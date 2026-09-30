@@ -46,7 +46,7 @@ MODULE Main()
         // Step 1: Main Menu & Input Validation
         DISPLAY "---MAIN MENU---"
         DISPLAY "1. Log Cardio Workout"
-        DISPLAY "2. Log Strength Workout
+        DISPLAY "2. Log Strength Workout"
         DISPLAY "3. View Activity Summary"
         DISPLAY "4. Exit"
         DISPLAY "Enter your choice (1-4):"
