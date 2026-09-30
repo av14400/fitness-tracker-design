@@ -138,6 +138,7 @@ MODULE Main()
             DISPLAY "========================================="
          ELSE If main_choice == 4 THEN
             DISPLAY "Thank you for using Campus Fitness Tracker. Stay Active!"
+            BREAK
          END IF
        END WHILE
 END MODULE
